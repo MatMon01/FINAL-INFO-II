@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1640630716 source:c:\users\monic\onedrive\carpeta de matias\programas-programación\info ii (2020)\final\dynamic memory allocation\exercise_3\exercise_3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
