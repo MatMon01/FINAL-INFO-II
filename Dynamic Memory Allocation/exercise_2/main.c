@@ -34,7 +34,7 @@ una nota, agregar registros y ordenar el archivo alfabéticamente.
 ///NOTE (25/12/2021): Finished the program. A lack of planning at the beginning led to confusion during the development.
 ///                   The result feels poorly put together although it works. For the next time it would be better
 ///                   to solve it in one sitting, paying close attention to the relationship between the functions and
-///                   thinking about future steps.S
+///                   thinking about future steps.
 
 #define MAX_COMMAND_LENGTH 15
 
@@ -58,6 +58,9 @@ int main()
         main_menu();
         gets(command);
     }
+
+    if(record)
+        free(record);
 
     return 0;
 }

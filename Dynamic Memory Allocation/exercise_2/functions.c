@@ -66,6 +66,9 @@ void new_record(student_data **record_ptr, int *record_size_ptr)
             fflush(stdin);
             return;
         }
+        free(*record_ptr);
+        *record_ptr = NULL;
+        *record_size_ptr = 0;
         fflush(stdin);
     }
     printf("Enter the name of the record to be created: ");//this is useless in this implementation unless multiple records are kept. If files where used instead we could name the file with this input
