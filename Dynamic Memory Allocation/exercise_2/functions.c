@@ -286,20 +286,20 @@ void append_student(student_data **record_ptr, int *record_size_ptr) //we use a 
 ///Binary search
 student_data* find_student(student_data **record_ptr, int *record_size_ptr, char name[])
 {
-    int h_bound = *record_size_ptr-1, l_bound = 0, medium;
+    int h_bound = *record_size_ptr-1, l_bound = 0, middle;
 
     while(l_bound <= h_bound)
     {
         medium = (l_bound+h_bound)/2;
-        if(!strcmp((*record_ptr)[medium].name, name))
+        if(!strcmp((*record_ptr)[middle].name, name))
         {
-            return &(*record_ptr)[medium]; //We return the adress to the student element in the record
+            return &(*record_ptr)[middle]; //We return the adress to the student element in the record
         }
 
-        if(strcmp((*record_ptr)[medium].name, name) > 0)//the name in med goes after the name we are looking for
-            h_bound = medium-1;
+        if(strcmp((*record_ptr)[middle].name, name) > 0)//the name in mid goes after the name we are looking for
+            h_bound = middle-1;
         else
-            l_bound = medium+1;
+            l_bound = middle+1;
     }
 
     return NULL;
