@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1641844405 source:c:\users\monic\onedrive\carpeta de matias\programas-programación\info ii (2020)\final\c++, lists\exercise_teams_budgets\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<iostream>
+

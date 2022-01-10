@@ -32,7 +32,7 @@ JUGADOR::JUGADOR(char * S)
 }
 JUGADOR::~JUGADOR()
 {
-		//cout << "\n\n   MATANDO A ... " << NOM << "\n\n";
+		cout << "\n\n   MATANDO A ... " << NOM << "\n\n";
 		//getchar();
 }
 
@@ -61,8 +61,14 @@ EQUIPO::EQUIPO ( char * S , JUGADOR * CAPITAN )
 
 EQUIPO::~EQUIPO()
 {
-		cout << "\n\n   MATANDO A ... TODOS LOS JUGADORES\n\n";
-		cout << "\n\n   TAREA PARA USTEDES \n\n";
+		JUGADOR * scan_ptr=PUNJU, * del_ptr;
+
+		cout << "\n\n   MATANDO A ... TODOS LOS JUGADORES DE "<<NOM<<"\n\n";
+		while(scan_ptr){
+            del_ptr=scan_ptr;
+            scan_ptr=scan_ptr->SIG;
+            delete del_ptr;
+		}
 		getchar();
 }
 
@@ -142,8 +148,13 @@ GUIRNALDA::GUIRNALDA()
 
 GUIRNALDA::~GUIRNALDA()
 {
+		EQUIPO * scan_ptr=INICIO, * del_ptr;
 		cout << "\n\n   QUE SE VAYAN TODOS !!! DESTRUYENDO PARTIDOS" ;
-		cout << "\n\n   OTRA QUE ES PARA USTEDES " ;
+		while(scan_ptr){
+            del_ptr=scan_ptr;
+            scan_ptr=scan_ptr->SIG;
+            delete del_ptr;
+		}
 		getchar();
 }
 
