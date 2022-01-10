@@ -10,7 +10,7 @@ todos los artículos del proveedor “PEREZ”. Para probar el funcionamiento deberá 
 primero el archivo con un programa auxiliar.
 **/
 
-///NOTE (27/12/2022): The database file used to solve this exercise was created with a different program and it doesn't contain
+///NOTE (27/12/2021): The database file used to solve this exercise was created with a different program and it doesn't contain
 ///                   any supplier named PEREZ. Instead this program lists the all the suppliers and asks the user to decide
 ///                   whose articles will have a percentage increase in price. This is done in memory and then written to a
 ///                   different file, BD_INCREASE. Also, the length of the strings is 20 for the description and 15 for the supplier.
