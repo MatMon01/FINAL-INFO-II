@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1641695778 source:c:\users\monic\onedrive\carpeta de matias\programas-programación\info ii (2020)\final\c++, lists\exercise_russian_roulette\main.cpp
-	<conio.h>
-	<stdlib.h>
-	<stdio.h>
-	<string.h>
-	<iostream>
-

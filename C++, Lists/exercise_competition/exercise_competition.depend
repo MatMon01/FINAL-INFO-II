@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1641782480 source:c:\users\monic\onedrive\carpeta de matias\programas-programación\info ii (2020)\final\c++, lists\exercise_competition\main.cpp
-	<stdio.h>
-	<stdlib.h>
-	<iostream>
-	<string.h>
-
