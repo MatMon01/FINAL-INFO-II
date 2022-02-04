@@ -108,7 +108,7 @@ int main()
 
     fread(&athlete_buffer, sizeof(struct atleta), 1, athletes_file_ptr);
     while (!feof(athletes_file_ptr)){
-        fread(&name_buf, 50, 1, names_file_ptr); //The first time we read the file it's empty, we will be reading outside the file so feof()==0
+        fread(&name_buf, 50, 1, names_file_ptr); //The first time we read the file it's empty, we will be reading outside the file so feof()!=0
         //printf("%d\n", !feof(names_file_ptr));
         while (!feof(names_file_ptr)){
             if (!strcmp(name_buf, athlete_buffer.NOMBRE)){
